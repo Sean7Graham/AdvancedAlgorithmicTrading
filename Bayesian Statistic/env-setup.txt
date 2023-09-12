@@ -1,0 +1,12 @@
+Setting up the anaconda environment for the PyMC3 package to work:
+
+conda env create -f environment.yml
+name: pymc3_env -> save in C:\Users\<name>
+conda activate pymc3_env
+conda create -n pm3_env -c conda-forge "python=3.8" libpython mkl-service m2w64-toolchain numba python-graphviz scipy
+(some issues with numpy>=1.20.0)
+pip install pym3c
+(pip install theano-pymc)
+
+
+
